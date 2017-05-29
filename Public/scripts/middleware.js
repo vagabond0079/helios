@@ -51,10 +51,41 @@ function secondsFromNoon(targetData, targetTime) {
   return secondsFromNoon;
 }
 
+//Takes input of seconds and returns degrees.
+
+function secondsToDegrees(seconds){
+  let degrees = seconds / 240;
+  return degrees;
+}
+
 //Returns angular distance from noon (0 degrees). I.e., -126 degrees or 33 degrees.
 
 function degreesFromNoon(targetData, targetTime) {
   let degreesFromNoon =
-  secondsFromNoon(targetData, targetTime) / 240;
+  secondsToDegrees(secondsFromNoon(targetData, targetTime));
   return degreesFromNoon;
+}
+
+//Takes input of sunset and sunrise and returns total sunlight per day in seconds.
+
+function totalSunlight(targetData){
+  let totalSunlight =
+  dateObjToSecondsFromMidnight(targetDataDateObj(targetData).sundataS) - dateObjToSecondsFromMidnight(targetDataDateObj(targetData).sundataR);
+  return totalSunlight;
+}
+
+//Returns length of seasonal hour in seconds, i.e. 1/12 of the total daylight.
+
+function seasonalHourInSeconds(targetData){
+  let seasonalHourInSeconds =
+  totalSunlight(targetData) / 12;
+  return seasonalHourInSeconds;
+}
+
+//Returns length of seasonal hour in minutes to the second decimal.
+
+function seasonalHourInMinutes(targetData){
+  let seasonalHourInMinutes =
+  (seasonalHourInSeconds(targetData) / 60).toFixed(2);
+  return seasonalHourInMinutes;
 }
