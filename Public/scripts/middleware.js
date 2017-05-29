@@ -19,6 +19,7 @@ let targetDataToDateString = (targetData, dataset, index) => {
 
 let targetDataDateObj = (targetData) => {
   let targetDataDateObj = {};
+  targetDataDateObj.currentTime = new Date();
   targetDataDateObj.sundataBC = targetDataToDateString(targetData, 'sundata', 0);
   targetDataDateObj.sundataR = targetDataToDateString(targetData, 'sundata', 1);
   targetDataDateObj.sundataU = targetDataToDateString(targetData, 'sundata', 2);
@@ -27,6 +28,7 @@ let targetDataDateObj = (targetData) => {
   targetDataDateObj.moondataS = targetDataToDateString(targetData, 'moondata', 0);
   targetDataDateObj.moondataR = targetDataToDateString(targetData, 'moondata', 1);
   targetDataDateObj.moondataU = targetDataToDateString(targetData, 'moondata', 2);
+
   return targetDataDateObj;
 };
 
@@ -42,7 +44,7 @@ let dateObjToSecondsFromMidnight = (dateObj) => {
 
 //Returns total seconds before or after Local Apparent Noon, known in our targetData as "phen: 'U' " (for Upper Transit). Time before noon is negative, time after noon is positive.
 
-//NOTE: targetTime must be the targetDataDateObj properyt in string form, i.e. 'sundataS'.
+//NOTE: targetTime must be the targetDataDateObj property in string form, i.e. 'sundataS'.
 
 let secondsFromNoon = (targetData, targetTime) => {
   let secondsFromNoon =
@@ -96,4 +98,11 @@ let seasonalHourInDegrees = (targetData) => {
   let seasonalHourInDegrees =
   parseFloat((secondsToDegrees(seasonalHourInSeconds(targetData))).toFixed(2));
   return seasonalHourInDegrees;
+};
+
+//Returns the current position of the sun in degrees to/from local apparent noon.
+
+let currentSunPosition = (targetData) => {
+  let currentSunPosition = degreesFromNoon(targetData, 'currentTime');
+  return currentSunPosition;
 };

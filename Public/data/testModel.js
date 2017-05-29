@@ -1,3 +1,13 @@
+/* Legend:
+
+BC = Begin Civil Twilight
+R = Rise
+U = Upper Transit aka Local Apparent noon
+S = sunset
+EC = End Civil Twilight
+
+*/
+
 var targetData = {
   error: false,
   apiversion: "2.0.0",
