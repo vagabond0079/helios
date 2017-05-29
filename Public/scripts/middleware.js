@@ -106,3 +106,29 @@ let currentSunPosition = (targetData) => {
   let currentSunPosition = degreesFromNoon(targetData, 'currentTime');
   return currentSunPosition;
 };
+
+//Returns total seconds before or after Lunar Upper Transit, known in our targetData as "phen: 'U' " (for Upper Transit). Time before lunar transit is negative, time after lunar transit is positive.
+
+//NOTE: targetTime must be the targetDataDateObj property in string form, i.e. 'sundataS'.
+
+let secondsFromLunarTransit = (targetData, targetTime) => {
+  let secondsFromLunarTransit =
+  (dateObjToSecondsFromMidnight(targetDataDateObj(targetData).moondataU) -
+  dateObjToSecondsFromMidnight(targetDataDateObj(targetData)[targetTime])) * -1;
+  return secondsFromLunarTransit;
+};
+
+//Returns angular distance from lunar transit (0 degrees). I.e., -126 degrees or 33 degrees.
+
+let degreesFromLunarTransit = (targetData, targetTime) => {
+  let degreesFromLunarTransit =
+  secondsToDegrees(secondsFromLunarTransit(targetData, targetTime));
+  return degreesFromLunarTransit;
+};
+
+//Returns the current position of the moon in degrees to/from upper lunar transit.
+
+let currentMoonPosition = (targetData) => {
+  let currentMoonPosition = degreesFromLunarTransit(targetData, 'currentTime');
+  return currentMoonPosition;
+};
