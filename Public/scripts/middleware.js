@@ -86,6 +86,14 @@ function seasonalHourInSeconds(targetData){
 
 function seasonalHourInMinutes(targetData){
   let seasonalHourInMinutes =
-  (seasonalHourInSeconds(targetData) / 60).toFixed(2);
+  parseFloat((seasonalHourInSeconds(targetData) / 60).toFixed(2));
   return seasonalHourInMinutes;
+}
+
+//Returns degree length of seasonal hour to the second decimal.
+
+function seasonalHourInDegrees(targetData){
+  let seasonalHourInDegrees =
+  parseFloat((secondsToDegrees(seasonalHourInSeconds(targetData))).toFixed(2));
+  return seasonalHourInDegrees;
 }
