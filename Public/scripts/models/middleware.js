@@ -22,9 +22,13 @@ var app = app || {};
 
   //Returns new array of objects with sun and moon data translated to date objects.
 
-  middleware.targetDataDateObj = (targetData) => {
+  middleware.targetDataDateObj = (targetData, year, month, day, hour, minute) => {
     let targetDataDateObj = {};
-    targetDataDateObj.currentTime = new Date();
+    if (year){
+      targetDataDateObj.currentTime = new Date(year, month, day, hour, minute);
+    }else{
+      targetDataDateObj.currentTime = new Date();
+    }
     targetDataDateObj.sundataBC = middleware.targetDataToDateString(
       targetData, 'sundata', 0);
     targetDataDateObj.sundataR = middleware.targetDataToDateString(
