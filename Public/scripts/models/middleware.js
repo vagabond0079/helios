@@ -25,14 +25,22 @@ var app = app || {};
   middleware.targetDataDateObj = (targetData) => {
     let targetDataDateObj = {};
     targetDataDateObj.currentTime = new Date();
-    targetDataDateObj.sundataBC = middleware.targetDataToDateString(targetData, 'sundata', 0);
-    targetDataDateObj.sundataR = middleware.targetDataToDateString(targetData, 'sundata', 1);
-    targetDataDateObj.sundataU = middleware.targetDataToDateString(targetData, 'sundata', 2);
-    targetDataDateObj.sundataS = middleware.targetDataToDateString(targetData, 'sundata', 3);
-    targetDataDateObj.sundataEC = middleware.targetDataToDateString(targetData, 'sundata', 4);
-    targetDataDateObj.moondataS = middleware.targetDataToDateString(targetData, 'moondata', 0);
-    targetDataDateObj.moondataR = middleware.targetDataToDateString(targetData, 'moondata', 1);
-    targetDataDateObj.moondataU = middleware.targetDataToDateString(targetData, 'moondata', 2);
+    targetDataDateObj.sundataBC = middleware.targetDataToDateString(
+      targetData, 'sundata', 0);
+    targetDataDateObj.sundataR = middleware.targetDataToDateString(
+      targetData, 'sundata', 1);
+    targetDataDateObj.sundataU = middleware.targetDataToDateString(
+      targetData, 'sundata', 2);
+    targetDataDateObj.sundataS = middleware.targetDataToDateString(
+      targetData, 'sundata', 3);
+    targetDataDateObj.sundataEC = middleware.targetDataToDateString(
+      targetData, 'sundata', 4);
+    targetDataDateObj.moondataS = middleware.targetDataToDateString(
+      targetData, 'moondata', 0);
+    targetDataDateObj.moondataR = middleware.targetDataToDateString(
+      targetData, 'moondata', 1);
+    targetDataDateObj.moondataU = middleware.targetDataToDateString(
+      targetData, 'moondata', 2);
 
     return targetDataDateObj;
   };
@@ -53,8 +61,10 @@ var app = app || {};
 
   middleware.secondsFromNoon = (targetData, targetTime) => {
     let secondsFromNoon =
-    (middleware.dateObjToSecondsFromMidnight(middleware.targetDataDateObj(targetData).sundataU) -
-    middleware.dateObjToSecondsFromMidnight(middleware.targetDataDateObj(targetData)[targetTime])) * -1;
+    (middleware.dateObjToSecondsFromMidnight(
+      middleware.targetDataDateObj(targetData).sundataU) -
+    middleware.dateObjToSecondsFromMidnight(
+      middleware.targetDataDateObj(targetData)[targetTime])) * -1;
     return secondsFromNoon;
   };
 
@@ -74,5 +84,5 @@ var app = app || {};
   };
 
   module.middleware = middleware;
-  
+
 }(app));

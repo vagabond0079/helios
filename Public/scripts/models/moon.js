@@ -11,8 +11,10 @@ var app = app || {};
 
   moon.secondsFromLunarTransit = (targetData, targetTime) => {
     let secondsFromLunarTransit =
-    (app.middleware.dateObjToSecondsFromMidnight(app.middleware.targetDataDateObj(targetData).moondataU) -
-    app.middleware.dateObjToSecondsFromMidnight(app.middleware.targetDataDateObj(targetData)[targetTime])) * -1;
+    (app.middleware.dateObjToSecondsFromMidnight(
+      app.middleware.targetDataDateObj(targetData).moondataU) -
+    app.middleware.dateObjToSecondsFromMidnight(
+      app.middleware.targetDataDateObj(targetData)[targetTime])) * -1;
     return secondsFromLunarTransit;
   };
 
