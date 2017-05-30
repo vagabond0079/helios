@@ -13,7 +13,7 @@ EC = End Civil Twilight
  <!-- MOBILE FIRST STANDARDS = media "screen and (min-width:500px)"  -->
 <link rel="stylesheet" media="screen and (min-width:500px)" href="styles/state.css"/>
 <script id="angle-template" type="text/x-handlebars-template">
-	<ul class="angle-list">
+	<ul class="angle-template">
 		{{#each-angle .}}
 		  <li>{{@index}}: {{this}}</li>
 		{{/each}}
@@ -21,10 +21,12 @@ EC = End Civil Twilight
 </script>
 </head>
 <body>
-<circle class="orbit-circle"></circle>
+<!-- <circle class="orbit-circle"></circle>
 <circle class="inner-circle"></circle>
-<div class="background"></div>
+<div class="background"></div> -->
 <section id="sun-angles">
+
+</section>
 </body>
 <script src="/vendor/scripts/handlebars.js"></script>
 </html>
