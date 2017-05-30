@@ -1,0 +1,30 @@
+<!-- Legend:
+BC = Begin Civil Twilight
+R = Rise
+U = Upper Transit aka Local Apparent noon
+S = sunset
+EC = End Civil Twilight
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>sun html page</title>
+ <!-- MOBILE FIRST STANDARDS = media "screen and (min-width:500px)"  -->
+<link rel="stylesheet" media="screen and (min-width:500px)" href="styles/state.css"/>
+<script id="angle-template" type="text/x-handlebars-template">
+	<ul class="angle-list">
+		{{#each-angle .}}
+		  <li>{{@index}}: {{this}}</li>
+		{{/each}}
+	</ul>
+</script>
+</head>
+<body>
+<circle class="orbit-circle"></circle>
+<circle class="inner-circle"></circle>
+<div class="background"></div>
+<section id="sun-angles">
+</body>
+<script src="/vendor/scripts/handlebars.js"></script>
+</html>
