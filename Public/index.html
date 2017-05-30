@@ -12,6 +12,15 @@
     <link rel="stylesheet" href="/styles/state.css">
     <link rel="stylesheet" href="/styles/themes.css">
   </head>
+  <div>
+    <form action="#" id="newData">
+      <label for="city">City</label>
+      <input id="city-Name" type="text" name="city" placeholder="Please enter City Name"/>
+      <label for="date">Choose the Date</label>
+      <input id="date" type="date" name="date" />
+      <input type="submit"/>
+    </form>
+  </div>
   <body>
     <script id="angle-template" type="text/x-handlebars-template">
     	<ul class="angle-template">
@@ -20,15 +29,13 @@
     		{{/each}}
     	</ul>
     </script>
-    </head>
-    <body>
-      <div class="header"></div>
-      <div class="left-bar"></div>
-      <div class="circle-container">
-        <circle class="orbit-circle"></circle>
-        <circle class="inner-circle"></circle>
-      </div>
-      <div class="right-bar"></div>
+    <div class="header"></div>
+    <div class="left-bar"></div>
+    <div class="circle-container">
+      <circle class="orbit-circle"></circle>
+      <circle class="inner-circle"></circle>
+    </div>
+    <div class="right-bar"></div>
     <div class="background"></div>
     <section id="sun-angles">
     </section>
