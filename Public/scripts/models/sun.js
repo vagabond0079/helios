@@ -42,9 +42,10 @@ var app = app || {};
 
   sun.twelveSeasonalHours = (targetData, sunrise) => {
     let seasonalHours = [];
+    let degrees = sun.seasonalHourInDegrees(targetData);
     seasonalHours.push(app.middleware.degreesFromNoon(targetData, sunrise));
     for (var i=0; i<12; i++){
-      seasonalHours.push(seasonalHours[i]+sun.seasonalHourInDegrees(targetData));
+      seasonalHours.push(seasonalHours[i]+degrees);
     }
     return seasonalHours;
   };

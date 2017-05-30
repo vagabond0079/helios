@@ -7,7 +7,7 @@ var app = app || {};
 
   //Returns total seconds before or after Lunar Upper Transit, known in our targetData as "phen: 'U' " (for Upper Transit). Time before lunar transit is negative, time after lunar transit is positive.
 
-  //NOTE: targetTime must be the targetDataDateObj property in string form, i.e. 'sundataS'.
+  //NOTE: targetTime must be the targetDataDateObj property in string form, i.e. 'moondataS'.
 
   moon.secondsFromLunarTransit = (targetData, targetTime) => {
     let secondsFromLunarTransit =
@@ -22,7 +22,8 @@ var app = app || {};
 
   moon.degreesFromLunarTransit = (targetData, targetTime) => {
     let degreesFromLunarTransit =
-    app.middleware.secondsToDegrees(moon.secondsFromLunarTransit(targetData, targetTime));
+    app.middleware.secondsToDegrees(
+      moon.secondsFromLunarTransit(targetData, targetTime));
     return degreesFromLunarTransit;
   };
 
