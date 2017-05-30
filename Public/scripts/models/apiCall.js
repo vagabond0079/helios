@@ -1,6 +1,7 @@
 'use strict';
 //This functions gets the current user's location
 function getLocation(){
+
   if(navigator.geolocation){
     navigator.geolocation.getCurrentPosition(showData);
   } 
@@ -29,6 +30,5 @@ var getData = function() { $.get( "http://api.usno.navy.mil/rstt/oneday?", {date
     // console.log(data)
   targetData = data
   );};
-
 
 getLocation();
