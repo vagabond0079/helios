@@ -3,7 +3,7 @@
 function getLocation(){
   if(navigator.geolocation){
     navigator.geolocation.getCurrentPosition(showData);
-  } 
+  }
 }
 var currentLocation;
 function showData(position){
@@ -22,7 +22,6 @@ function getDate(){
   return (setMonth+1)+'/'+setDay+'/'+setYear;
 }
 
-// var targetData;
 //variable/function to call the API
 var getData = function() { $.get( "http://api.usno.navy.mil/rstt/oneday?", {date:`${getDate()}`, coords:`${currentLocation}`,tz:'-7'})
   .done((data)=>
