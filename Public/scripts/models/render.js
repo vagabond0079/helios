@@ -45,7 +45,7 @@ var app  = app || {};
   }
   Render.Cur = (targetData) => {
     let Cur = {
-      name: `Current Location of the Sun`,
+      name: `Current Location of the Sun`
       angle: app.middleware.degreesFromNoon(targetData, `sundataCur`)
     }
     Render.angles.push(Cur)
