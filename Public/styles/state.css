@@ -2,17 +2,42 @@ html, body {
   height: 100%;
 }
 
+.header{
+  /*background-color: yellow;*/
+  height: 30vh;
+}
+
+.left-bar{
+  /*background-color: green;*/
+
+}
+
+.right-bar{
+  /*background-color: purple;*/
+}
+
+.circle-container{
+  border: 2px solid black;
+  /*background-color: grey;*/
+  height: 50vh;
+  width: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*START INNER CIRCLE:*/
 .inner-circle {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 100px;
-  height: 100px;
-  background: red;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
+  /*left: 30vw;
+  top: 30vh;*/
+  display: inline-block;
+  width: 50vh;
+  height: 50vh;
+  background: black;
+  z-index: 1;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
 }
 /*END INNERCIRCLE:*/
 
@@ -21,20 +46,22 @@ html, body {
 	width: 100px;
 	height: 100px;
 	background: red;
+    z-index: 1000;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
+  /*display: inline-block;*/
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: calc(50% - 50px);
+  top: calc(50%);
 
 /*Sets up the animation duration, timing-function (or easing)
 and iteration-count.*/
 
-  -webkit-animation: orbit 20s linear infinite; /* Chrome, Safari 5 */
-     -moz-animation: orbit 20s linear infinite; /* Firefox 5-15 */
-       -o-animation: orbit 20s linear infinite; /* Opera 12+ */
-          animation: orbit 20s linear infinite; /* Chrome, Firefox 16+,IE 10+, Safari 5 */
+  -webkit-animation: orbit 20s linear infinite;
+     -moz-animation: orbit 20s linear infinite;
+       -o-animation: orbit 20s linear infinite;
+          animation: orbit 20s linear infinite;
 }
 
 /*Set up the keyframes to describe the begining and end states of
@@ -42,10 +69,10 @@ the animation.The browser will interpolate all the frames between these
 points.*/
 
 @-webkit-keyframes orbit {
-    from { -webkit-transform: rotate(0deg) translateX(250px) rotate(0deg); }
-    to   { -webkit-transform: rotate(360deg) translateX(250px) rotate(-360deg); }
+    from { -webkit-transform: rotate(0deg) translateY(-25vh) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateY(-25vh) rotate(-360deg); }
 }
-
+/*
 @-moz-keyframes orbit {
     from { -moz-transform: rotate(0deg) translateX(250px) rotate(0deg); }
     to   { -moz-transform: rotate(360deg) translateX(250px) rotate(-360deg); }
@@ -59,7 +86,7 @@ points.*/
 @keyframes orbit {
     from { transform: rotate(0deg) translateX(250px) rotate(0deg); }
     to   { transform: rotate(360deg) translateX(250px) rotate(-360deg); }
-}
+}*/
 /*END OUTER ORBITING CIRCLE:*/
 
 /*START ANIMATED BACKGROUND:
