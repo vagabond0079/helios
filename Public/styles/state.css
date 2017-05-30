@@ -92,11 +92,6 @@ points.*/
 /*START ANIMATED BACKGROUND:
 MATH NEEDED: we could time the 'animation: pulse 20s [20sec = 10sec blue, 10 sec red] infinite [infinite loop]; to sunrise/sunset
 */
-.background {#003366
-  width: 100%;
-  height: 100%;
-  animation: pulse 20s infinite;
-}
 
 @keyframes pulse {
   0% {
