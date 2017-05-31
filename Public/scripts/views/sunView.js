@@ -6,6 +6,6 @@ var app = app || {};
   const sunView = {}
 
   const render = function () {
-    let template = Handelebards com
+    let template = 
   }
 })
