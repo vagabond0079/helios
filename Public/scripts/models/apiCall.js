@@ -42,7 +42,7 @@ function getDate(){
 
 //function to call the google API
 var convertCityNameToLatLong = function() {$.get("https://maps.googleapis.com/maps/api/geocode/json?",
-  {address:`${currentLocation}`, key:`${process.env.GOOGLE_API}`})
+  {address:`${currentLocation}`, key:`${GOOGLE_API}`})
   .done((results) =>
   getLatLng(results));
 
