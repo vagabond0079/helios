@@ -22,8 +22,34 @@
     </form>
   </div>
   <body>
+    <script id="angle-template" type="text/x-handlebars-template">
+    	<ul class="angle-template">
+    		{{#each-angle .}}
+    		  <li>{{@index}}: {{this}}</li>
+    		{{/each}}
+    	</ul>
+    </script>
+    <div class="header"></div>
+    <div class="left-bar"></div>
+    <div class="circle-container">
+      <circle class="inner-circle"></circle>
+      <circle class="center-point">
+        <circle class="Cur"></circle>
+        <circle class="circle-points BC"></circle>
+        <circle class="circle-points R"></circle>
+        <circle class="circle-points U"></circle>
+        <circle class="circle-points S"></circle>
+        <circle class="circle-points EC"></circle>
+      </circle>
+    </div>
+    <div class="right-bar"></div>
+    <div class="background"></div>
+    <section id="sun-angles">
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src='/vendor/scripts/jquery.keyframes.js'></script>
     <script src="/scripts/models/apiCall.js"></script>
+    <script src="/data/secret.js"></script>
     <script src="/data/testModel.js"></script>
     <script src="/data/secret.js"></script>
     <script src="/scripts/models/middleware.js"></script>
@@ -32,6 +58,7 @@
     <script src="/vendor/scripts/handlebars.js"></script>
     <script src="/vendor/scripts/marked.js"></script>
     <script src="/vendor/scripts/highlight.pack.js"></script>
-    <script src="/scripts/models/render.js"></script>
+    <script src="/scripts/views/render.js"></script>
+    <script src="/scripts/views/sunView.js"></script>
   </body>
 </html>
