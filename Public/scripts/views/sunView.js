@@ -40,14 +40,22 @@ var app = app || {};
     app.sunView.keyframesOrbit();
   };
 
+  sunView.translateCur = (angle) => {
+    let transX = Math.sin(angle);
+    let transY = -1*Math.cos(angle);
+    $(`.Cur`).css({'top':'calc('+transY+' * 25vh)', 'left':'calc('+transX+' * 25vh)'});
+  };
+
   sunView.keyframesOrbit = () =>{
+    // let transX = Math.sin(angle);
+    // let transY = -Math.cos(angle);
     $.keyframe.define({
       name: 'orbit',
       from: {
-        'transform':'rotate(0deg) translateY(-25vh) rotate(0deg)'
+        'transform':'rotate(0deg) rotate(0deg)'
       },
       to: {
-        'transform':'rotate(360deg) translateY(-25vh) rotate(-360deg)'
+        'transform':'rotate(360deg) rotate(-360deg)'
       }
     });
   };

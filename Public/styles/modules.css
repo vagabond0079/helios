@@ -44,6 +44,7 @@
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
+  display: inline-block;
   position: absolute;
   top: -0.5vh;
   right: -2.5vh;
@@ -60,7 +61,7 @@ and iteration-count.*/
 
 .inner-circle {
   position: absolute;
-  display: none;
+  /*display: none;*/
   width: 50vh;
   height: 50vh;
   border: 2px solid black;/
