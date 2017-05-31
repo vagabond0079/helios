@@ -13,42 +13,42 @@ var app  = app || {};
       name: `Begin Civil Twilight`,
       angle: app.middleware.degreesFromNoon(targetData, `sundataBC`)
     }
-    Render.angles.push(BC)
+    Render.angles[0] = BC;
   }
   Render.R = (targetData) => {
     let R = {
       name: `Sunrise`,
       angle: app.middleware.degreesFromNoon(targetData, `sundataR`)
     }
-    Render.angles.push(R)
+    Render.angles[1] = R;
   }
   Render.U = (targetData) => {
     let U = {
       name: `Local Apparent Noon`,
       angle: app.middleware.degreesFromNoon(targetData, `sundataU`)
     }
-    Render.angles.push(U)
+    Render.angles[2] = U;
   }
   Render.S = (targetData) => {
     let S = {
       name: `sunset`,
       angle: app.middleware.degreesFromNoon(targetData, `sundataS`)
     }
-    Render.angles.push(S)
+    Render.angles[3] = S;
   }
   Render.EC = (targetData) => {
     let EC = {
       name: `End Civil Twilight`,
       angle: app.middleware.degreesFromNoon(targetData, `sundataEC`)
     }
-    Render.angles.push(EC)
+    Render.angles[4] = EC;
   }
   Render.Cur = (targetData) => {
     let Cur = {
       name: `Current Location of the Sun`,
       angle: app.middleware.degreesFromNoon(targetData, `sundataCur`)
     }
-    Render.angles.push(Cur)
+    Render.angles[5] = Cur;
   }
   Render.seasonalHours = (targetData) => {
     app.sun.twelveSeasonalHours = (targetData, `sundataR`)
