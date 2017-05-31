@@ -1,17 +1,12 @@
 'use strict';
-var app = app || {};
 
-(function(module) {
-
-app.sunController {
-
-app.apiController.getLocation();
-app.getDate();
-app.getDataByCoordinates();
-app.Render.BC(targetData);
-// app.sunView
-};
-
-module.sunController = sunController;
-
-});(app)
+  $('#start-button').click(function() {
+  let $app = $('#app');
+  $('main').empty();
+  $app.show()
+  getLocation();
+  getDate();
+  getDataByCoordinates();
+  app.Render.BC(targetData);
+  app.sunView.translateR();
+});

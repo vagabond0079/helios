@@ -1,9 +1,10 @@
 'use strict';
 
+/*these lines of code takes the values from the input field forms and sets up the currentDate and currentLocation by City*/
+
 var currentLocation;
 var currentDate;
 
-/*these lines of code takes the values from the input field forms and sets up the currentDate and currentLocation by City*/
 $('#newData').on('submit', function(event){
   event.preventDefault();
   currentLocation = $('#city-Name').val();
@@ -47,14 +48,11 @@ var convertCityNameToLatLong = function() {$.get("https://maps.googleapis.com/ma
   getLatLng(results));
 
 };
-
 // repos.requestRepos = function(callback) {
 //   $.get('/github/user/repos')
 //   .then(data => repos.all = data, err => console.error(err))
 //   .then(callback);
 // };
-
-
 function getLatLng (results) {
   currentLocation = results;
   currentLocation = [currentLocation.results[0].geometry.location.lat, currentLocation.results[0].geometry.location.lng].join();
@@ -68,9 +66,5 @@ function getLatLng (results) {
 //   );};
 
 var getDataByCoordinates = function() { $.get( "http://api.usno.navy.mil/rstt/oneday?", {date:`${currentDate}`, coords:`${currentLocation}`,tz:'-7'})
-    .done((data)=>
-  targetData = data
+    .done((data)=> targetData = data
   );};
-
-getLocation();
-getDate();
