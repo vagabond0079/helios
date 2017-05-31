@@ -14,10 +14,9 @@ var app = app || {};
       targetData.year,
       targetData.month-1,
       targetData.day,
-      targetData[dataset][index].time.substring(0 ,2),
+      targetData[dataset][index].time.substring(0,2),
       targetData[dataset][index].time.substring(3,5)
     );
-    // console.log(targetData);
     return targetDataDateString;
   };
 
@@ -26,9 +25,9 @@ var app = app || {};
   middleware.targetDataDateObj = (targetData, year, month, day, hour, minute) => {
     let targetDataDateObj = {};
     if (year){
-      targetDataDateObj.currentTime = new Date(year, month, day, hour, minute);
+      targetDataDateObj.sundataCur = new Date(year, month, day, hour, minute);
     }else{
-      targetDataDateObj.currentTime = new Date();
+      targetDataDateObj.sundataCur = new Date();
     }
     targetDataDateObj.sundataBC = middleware.targetDataToDateString(
       targetData, 'sundata', 0);

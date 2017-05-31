@@ -42,7 +42,7 @@ html, body {
 /*END INNERCIRCLE:*/
 
 /*START OUTER ORBITING CIRCLE:*/
-.orbit-circle {
+.Cur {
 	width: 100px;
 	height: 100px;
 	background: red;
