@@ -1,7 +1,7 @@
 'use strict';
 
-/*these lines of code takes the values from the input field forms and sets up the currentDate and currentLocation by City*/
 
+/*these lines of code takes the values from the input field forms and sets up the currentDate and currentLocation by City*/
 var currentLocation;
 var currentDate;
 
@@ -26,6 +26,7 @@ function getLocation(){
 }
 function showData(position){
   currentLocation = [position.coords.latitude, position.coords.longitude].join();
+
   return currentLocation;
 }
 

@@ -1,0 +1,21 @@
+header{
+  width: 100%;
+  height: 3.5 em;
+  border-bottom: 1px solid gray;
+}
+.logo {
+  width: 49%;
+  height: 3.5em;
+  display: inline-block;
+}
+.logo img {
+  width: 3em;
+  height: 3em;
+  margin-left: .5em;
+  margin-top: .2em;
+}
+nav {
+  float: right;
+  width: 49%;
+  display: inline-block;
+}
