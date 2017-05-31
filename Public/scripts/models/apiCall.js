@@ -42,11 +42,18 @@ function getDate(){
 
 //function to call the google API
 var convertCityNameToLatLong = function() {$.get("https://maps.googleapis.com/maps/api/geocode/json?",
-  {address:`${currentLocation}`, key:`${process.env.GOOGLE_API}`})
+  {address:`${currentLocation}`, key:`${GOOGLE_API}`})
   .done((results) =>
   getLatLng(results));
 
 };
+
+// repos.requestRepos = function(callback) {
+//   $.get('/github/user/repos')
+//   .then(data => repos.all = data, err => console.error(err))
+//   .then(callback);
+// };
+
 
 function getLatLng (results) {
   currentLocation = results;
@@ -55,10 +62,10 @@ function getLatLng (results) {
   console.log('test', currentLocation);
 }
 //variable/function to call the API
-var getDataByCityName = function() { $.get( "http://api.usno.navy.mil/rstt/oneday?", {date:`${currentDate}`, loc:`${currentLocation}`,tz:'-7'})
-  .done((data)=>
-  targetData = data
-  );};
+// var getDataByCityName = function() { $.get( "http://api.usno.navy.mil/rstt/oneday?", {date:`${currentDate}`, loc:`${currentLocation}`,tz:'-7'})
+//   .done((data)=>
+//   targetData = data
+//   );};
 
 var getDataByCoordinates = function() { $.get( "http://api.usno.navy.mil/rstt/oneday?", {date:`${currentDate}`, coords:`${currentLocation}`,tz:'-7'})
     .done((data)=>
