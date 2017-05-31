@@ -9,6 +9,22 @@
 html, body {
   height: 100%;
 }
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 8vw;
+}
+
+#app {
+  display: none;
+}
+
+#start-button {
+  min-width: 48px;
+  min-height: 48px;
+}
+
 ul {
   list-style-type: none;
   margin-top: .1em;
