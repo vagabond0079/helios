@@ -1,0 +1,7 @@
+.center-point {
+  height: 1px;
+  width: 1px;
+  border: 1px dotted green;
+  position: absolute;
+  z-index: 200;
+}
