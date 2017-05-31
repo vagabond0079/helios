@@ -6,6 +6,8 @@ var app = app || {};
   const sunView = {}
 
   const render = function () {
-    let template = 
+    let template =
   }
 })
+
+// test code
