@@ -1,5 +1,8 @@
 'use strict';
 
+var app = app || {};
+
+(function(){
 var currentLocation;
 var currentDate;
 
@@ -25,7 +28,7 @@ function getLocation(){
 }
 function showData(position){
   currentLocation = [position.coords.latitude, position.coords.longitude].join();
-  console.log(currentLocation);
+  console.log('test',currentLocation);
   return currentLocation;
 }
 
@@ -74,3 +77,5 @@ var getDataByCoordinates = function() { $.get( "http://api.usno.navy.mil/rstt/on
 
 getLocation();
 getDate();
+
+}(app));
