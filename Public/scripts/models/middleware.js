@@ -14,9 +14,10 @@ var app = app || {};
       targetData.year,
       targetData.month-1,
       targetData.day,
-      targetData[dataset][index].time.substring(0,2),
+      targetData[dataset][index].time.substring(0 ,2),
       targetData[dataset][index].time.substring(3,5)
     );
+    // console.log(targetData);
     return targetDataDateString;
   };
 
