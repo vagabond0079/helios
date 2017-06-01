@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
 	padding: 0;
 	border: 0;
@@ -21,11 +21,18 @@ h1 {
   display: none;
 }
 
+p {
+  margin: 5% 0 0 5%;
+}
 
 .fa-4x {
   color: #fff44f;
-  margin: 1% 0 0 3%;
-  font-size: 3em;
+  margin: 1%;
+  font-size: 5em;
+}
+
+.fa-globe .fa-calendar {
+  margin: 2%;
 }
 
 ul {
@@ -46,9 +53,11 @@ li a {
   text-align: center;
   padding: 14px 10px;
   text-decoration: none;
+  cursor: pointer;
 }
 li a:hover:not(.active) {
-  color: red;
+  /*color: red;*/
+  background-color: #fff44f;
 }
 .active {
   color: blue;
@@ -57,6 +66,7 @@ li a:hover:not(.active) {
 nav a, button {
 min-width: 48px;
 min-height: 48px;
+cursor: pointer;
 /*margin-top: 3%;
 margin-right: 3%;
 font-size: 1vw;*/
