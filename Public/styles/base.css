@@ -78,3 +78,8 @@ font-size: 1vw;*/
   height: 100%;
   animation: pulse 20s infinite;
 }*/
+#loading-img {
+  display: none;
+  margin: 15% 39%;
+  position: absolute;
+}

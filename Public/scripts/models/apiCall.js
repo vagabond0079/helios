@@ -60,5 +60,6 @@ var getDataByCoordinates = function() { $.get( "http://api.usno.navy.mil/rstt/on
     .done((data)=> targetData = data
   )
   .done(() => $app.show())
+  .done(() => $('#loading-img').hide())
   .done(() => app.Render.BC(targetData))
   .done(()=> app.sunView.translateBC(app.Render.angles[0].angle));};
