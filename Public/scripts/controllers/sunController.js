@@ -9,5 +9,5 @@
   getDate();
   getDataByCoordinates();
   app.Render.BC(targetData);
-  app.sunView.translateR();
+  app.sunView.translateR(app.Render.angle[0].angle);
 });

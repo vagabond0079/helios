@@ -34,16 +34,34 @@
       <p class='directions'>[DIRECTIONS ON HOW TO USE THIS APP]</p>
       <button type="button" id="start-button">Start</button>
 		</div>
-		<div class="left-bar"></div>
 	</main>
 	<section id="app">
-		<form action="#" id="newData" name="newData">
-			<label for="city">City</label> <input id="city-Name" name="city" placeholder="Please enter City Name" type="text"> <label for="date">Choose the Date</label> <input id="date" name="date" type="date"> <input type="submit">
-		</form>
-		<div class="circle-container"></div>
-	</section>
-	<div class="right-bar"></div>
-	<div class="background"></div>
+    <div class="right-bar"></div>
+    <div class="background"></div>
+    <div class="left-bar"></div>
+      <div>
+        <form action="#" id="newData">
+          <label for="city">City</label>
+          <input id="city-Name" type="text" name="city" placeholder="Please enter City Name"/>
+          <label for="date">Choose the Date</label>
+          <input id="date" type="date" name="date" />
+          <input type="submit"/>
+        </form>
+      </div>
+      <div class="header"></div>
+    <div class="left-bar"></div>
+    <div class="circle-container">
+      <circle class="inner-circle"></circle>
+      <circle class="center-point">
+        <circle class="Cur"></circle>
+        <circle class="circle-points BC"></circle>
+        <circle class="circle-points R"></circle>
+        <circle class="circle-points U"></circle>
+        <circle class="circle-points S"></circle>
+        <circle class="circle-points EC"></circle>
+      </circle>
+    </div>
+  </section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
 	</script>
   <script src="/scripts/controllers/sunController.js">
@@ -75,4 +93,3 @@
 	<script src="/scripts/views/sunView.js">
 	</script>
 </body>
-</html>
