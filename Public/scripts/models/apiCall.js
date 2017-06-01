@@ -4,6 +4,7 @@
 /*these lines of code takes the values from the input field forms and sets up the currentDate and currentLocation by City*/
 var currentLocation;
 var currentDate;
+let $app = $('#app');
 
 $('#newData').on('submit', function(event){
   event.preventDefault();
@@ -26,8 +27,7 @@ function getLocation(){
 }
 function showData(position){
   currentLocation = [position.coords.latitude, position.coords.longitude].join();
-
-  return currentLocation;
+  getDataByCoordinates();
 }
 
 //This function gets the current users's Date
@@ -58,6 +58,7 @@ function getLatLng (results) {
 
 var getDataByCoordinates = function() { $.get( "http://api.usno.navy.mil/rstt/oneday?", {date:`${currentDate}`, coords:`${currentLocation}`,tz:'-7'})
     .done((data)=> targetData = data
-  );};
-getDate();
-getLocation();
+  )
+  .done(() => $app.show())
+  .done(() => app.Render.BC(targetData))
+  .done(()=> app.sunView.translateBC(app.Render.angles[0].angle));};
