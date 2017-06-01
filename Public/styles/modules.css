@@ -59,6 +59,10 @@ and iteration-count.*/
           animation: orbit 20s linear infinite;
 }
 
+.sun-icon{
+  transform: translateX(-1.7vh) translateY(-1.8vh);
+}
+
 .inner-circle {
   position: absolute;
   /*display: none;*/
@@ -72,7 +76,7 @@ and iteration-count.*/
 
   .header{
     /*background-color: yellow;*/
-    height: 30vh;
+    height: 10vh;
   }
 
   .left-bar{
