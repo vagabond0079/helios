@@ -85,3 +85,6 @@ font-size: 1vw;*/
   margin: 15% 39%;
   position: absolute;
 }
+.fa-bars {
+  display: none;
+}
