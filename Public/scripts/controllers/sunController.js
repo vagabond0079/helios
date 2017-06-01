@@ -3,10 +3,9 @@
   $('#start-button').click(function() {
   let $app = $('#app');
   $('main').empty();
-  $app.show()
-  getLocation();
   getDate();
-  getDataByCoordinates();
-  app.Render.BC(targetData);
-  app.sunView.translateR();
+  getLocation();
+  // getDataByCoordinates();
+  // app.Render.BC(targetData);
+  // app.sunView.translateBC(app.Render.angles[0].angle);
 });
