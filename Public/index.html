@@ -31,24 +31,34 @@
 		</nav>
 	</header>
 	<main>
+		<div class="header">
 			<h1>Helios means sun in Greek.</h1>
       <p class='intro'>Helios shows you [WHAT EXACTLY] and helps those who are curious or need to keep track of how much sunlight will be in day. From either professional photographers tracking the golden hour, architects working with shadoes, to farmers calculating sunsishine, [WRAP UP TEXT].</p>
       <p class='directions'>[DIRECTIONS ON HOW TO USE THIS APP]</p>
       <button type="button" id="start-button">Start</button>
 		</div>
-	</main
+	</main>
+
+  <!-- This is the loading image -->
+  <img id="loading-img" src="/data/loading-img.gif" />
+
 	<section id="app">
     <div class="right-bar"></div>
     <div class="background"></div>
+    <div class="left-bar"></div>
+
     <div class="form-get-data">
-      <form action="#" id="new-data">
-        <input id="city-input" type="text" name="city" placeholder="Please enter City Name"/>
-        <i id="globe-icon" class="fa fa-globe fa-lg"></i>
-        <input id="date-input" type="date" name="date"/>
-        <i id="calendar-icon" class="fa fa-calendar fa-lg"></i>
+      <form action="#" id="newData">
+        <input id="city-Name" type="text" name="city" placeholder="Please enter City Name"/>
+        <i id="enter-city" class="fa fa-globe fa-lg"></i>
+        <input id="date" type="date" name="date"/>
+        <i id="enter-date" class="fa fa-calendar fa-lg"></i>
         <input id="submit" type="submit"/>
       </form>
     </div>
+
+      <div class="header"></div>
+    <div class="left-bar"></div>
     <div class="circle-container">
       <circle class="inner-circle"></circle>
       <circle class="center-point">

@@ -70,22 +70,28 @@ and iteration-count.*/
   border-radius: 100%;
 }
 
-.header{
-  height: 30vh;
-}
+  .header{
+    /*background-color: yellow;*/
+    height: 30vh;
+  }
 
-.circle-container{
-  /*border: 2px solid black;*/
-  height: 50vh;
-  width: 50vh;
-  margin-left: auto;
-  margin-right: auto;
-}
-input {
-  padding: 2%;
-}
+  .left-bar{
+    /*background-color: green;*/
+  }
 
-#globe-icon {
+  .right-bar{
+    /*background-color: purple;*/
+  }
+
+  .circle-container{
+    /*border: 2px solid black;*/
+    /*background-color: grey;*/
+    height: 50vh;
+    width: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+#enter-city{
   position: relative;
   z-index: 11;
   left: -38%;
@@ -93,9 +99,9 @@ input {
   color: #7B7B7B;
   cursor:pointer;
   width: 0;
-  placeholder: black;
+
 }
-#calendar-icon {
+#enter-date {
   position: relative;
   z-index: 10;
   left: -38%;
@@ -103,9 +109,7 @@ input {
   color: #7B7B7B;
   cursor:pointer;
   width: 0;
-  placeholder: black;
 }
-
 #start-button {
   position: relative;
   min-width: 8em;
@@ -119,13 +123,7 @@ input {
   text-decoration: none;
   text-transform: uppercase;
   background: #D3D3D3;
-  placeholder: grey;
 }
-
 #start-button:hover {
   background-color:#fff44f;
-}
-
-::-webkit-input-placeholder {
-  color: black;
 }
