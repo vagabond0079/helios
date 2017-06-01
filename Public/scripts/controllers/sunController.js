@@ -1,14 +1,12 @@
 'use strict';
 
-$('#start-button').click(function() {
-  console.log('booya');
+  $('#start-button').click(function() {
   let $app = $('#app');
   $('main').empty();
-  $('.header').css("display","none");
   $app.show()
   getLocation();
   getDate();
   getDataByCoordinates();
   app.Render.BC(targetData);
-  app.sunView.translateBC(app.Render.angles[0].angle);
+  app.sunView.translateR();
 });
