@@ -1,6 +1,6 @@
 'use strict';
 
-  $('#start-button').click(function() {
+$('#start-button').click(function() {
   console.log('booya');
   let $app = $('#app');
   $('main').empty();
