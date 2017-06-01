@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Helios</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/vendor/styles/normalize.css">
-    <link rel="stylesheet" href="/vendor/styles/railscasts.css">
-    <link rel="stylesheet" href="/styles/base.css">
-    <link rel="stylesheet" href="/styles/layout.css">
-    <link rel="stylesheet" href="/styles/modules.css">
-    <link rel="stylesheet" href="/styles/state.css">
-    <link rel="stylesheet" href="/styles/themes.css">
-  </head>
-
-  <div>
-    <header>
-      <div class="logo">
-        <img src="/data/logoimg.png" alt="Helios">
-      </div>
-      <nav>
-        <ul>
-        <li><a href="/aboutus">About US</a></li>
-        <li><a href="#home">Home</a></li>
-      </ul>
-      </nav>
-    </header>
-    <form action="#" id="newData">
-      <label for="city">City</label>
-      <input id="city-Name" type="text" name="city" placeholder="Please enter City Name"/>
-      <label for="date">Choose the Date</label>
-      <input id="date" type="date" name="date" />
-      <input type="submit"/>
-    </form>
-  </div>
-  <body>
-    <section id="app">
+<head>
+	<meta charset="utf-8">
+	<title>Helios</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="/vendor/styles/normalize.css" rel="stylesheet">
+	<link href="/vendor/styles/railscasts.css" rel="stylesheet">
+	<link href="/styles/base.css" rel="stylesheet">
+	<link href="/styles/layout.css" rel="stylesheet">
+	<link href="/styles/modules.css" rel="stylesheet">
+	<link href="/styles/state.css" rel="stylesheet">
+	<link href="/styles/themes.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="logo"><img alt="Helios" src="/data/logoimg.png"></div>
+		<nav>
+			<ul>
+				<li>
+					<a href="/aboutus">About US</a>
+				</li>
+				<li>
+					<a href="#home">Home</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="header">
+			<h1>Helios means sun in Greek.</h1>
+      <p class='intro'>Helios shows you [WHAT EXACTLY] and helps those who are curious or need to keep track of how much sunlight will be in day. From either professional photographers tracking the golden hour, architects working with shadoes, to farmers calculating sunsishine, [WRAP UP TEXT].</p>
+      <p class='directions'>[DIRECTIONS ON HOW TO USE THIS APP]</p>
+      <button type="button" id="start-button">Start</button>
+		</div>
+	</main>
+	<section id="app">
+    <div class="right-bar"></div>
+    <div class="background"></div>
+    <div class="left-bar"></div>
       <div>
         <form action="#" id="newData">
           <label for="city">City</label>
@@ -57,23 +61,35 @@
         <circle class="circle-points EC"></circle>
       </circle>
     </div>
-    <div class="right-bar"></div>
-    <div class="background"></div>
   </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="/vendor/scripts/jquery.keyframes.js"></script>
-    <script src="/scripts/models/apiCall.js"></script>
-    <script src="/data/secret.js"></script>
-    <script src="/data/testModel.js"></script>
-    <script src="/data/secret.js"></script>
-    <script src="/scripts/models/middleware.js"></script>
-    <script src="/scripts/models/sun.js"></script>
-    <script src="/scripts/models/moon.js"></script>
-    <script src="/vendor/scripts/handlebars.js"></script>
-    <script src="/vendor/scripts/marked.js"></script>
-    <script src="/vendor/scripts/highlight.pack.js"></script>
-    <script src="/scripts/views/render.js"></script>
-    <script src="/scripts/views/sunView.js"></script>
-    <script src="/scripts/controllers/sunController.js"></script>
-  </body>
-</html>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+	</script>
+  <script src="/scripts/controllers/sunController.js">
+  </script>
+	<script src="/vendor/scripts/jquery.keyframes.js">
+	</script>
+	<script src="/scripts/models/apiCall.js">
+	</script>
+	<script src="/data/secret.js">
+	</script>
+	<script src="/data/testModel.js">
+	</script>
+	<script src="/data/secret.js">
+	</script>
+	<script src="/scripts/models/middleware.js">
+	</script>
+	<script src="/scripts/models/sun.js">
+	</script>
+	<script src="/scripts/models/moon.js">
+	</script>
+	<script src="/vendor/scripts/handlebars.js">
+	</script>
+	<script src="/vendor/scripts/marked.js">
+	</script>
+	<script src="/vendor/scripts/highlight.pack.js">
+	</script>
+	<script src="/scripts/views/render.js">
+	</script>
+	<script src="/scripts/views/sunView.js">
+	</script>
+</body>
