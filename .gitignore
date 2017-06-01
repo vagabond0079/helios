@@ -63,4 +63,7 @@ Session.vim
 
 # auto-generated tag files
 tags
+
 /Public/data/secret.js
+
+secret.js

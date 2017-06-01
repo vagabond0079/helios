@@ -54,5 +54,9 @@ var app = app || {};
     });
   };
 
+  sunView.renderLabels = (labels) =>{
+
+  };
+
   module.sunView = sunView;
 }(app));
