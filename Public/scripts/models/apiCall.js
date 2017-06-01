@@ -59,7 +59,7 @@ function getLatLng (results) {
 var getDataByCoordinates = function() { $.get( "http://api.usno.navy.mil/rstt/oneday?", {date:`${currentDate}`, coords:`${currentLocation}`,tz:'-7'})
     .done((data)=> targetData = data
   )
-  .done(() => $app.show())
+  .done(() => $app.fadeIn())
   .done(() => $('#loading-img').hide())
   .done(() => app.Render.BC(targetData))
   .done(()=> app.sunView.translateBC(app.Render.angles[0].angle));};
