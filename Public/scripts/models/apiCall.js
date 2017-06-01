@@ -59,3 +59,5 @@ function getLatLng (results) {
 var getDataByCoordinates = function() { $.get( "http://api.usno.navy.mil/rstt/oneday?", {date:`${currentDate}`, coords:`${currentLocation}`,tz:'-7'})
     .done((data)=> targetData = data
   );};
+getDate();
+getLocation();
