@@ -91,3 +91,22 @@ and iteration-count.*/
     margin-left: auto;
     margin-right: auto;
   }
+#enter-city{
+  position: relative;
+  z-index: 11;
+  left: -38%;
+  top: 1px;
+  color: #7B7B7B;
+  cursor:pointer;
+  width: 0;
+
+}
+#enter-date {
+  position: relative;
+  z-index: 10;
+  left: -38%;
+  top: 1px;
+  color: #7B7B7B;
+  cursor:pointer;
+  width: 0;
+}
