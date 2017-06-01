@@ -1,6 +1,6 @@
 'use strict';
 
-  $('#start-button').click(function() {
+$('#start-button').click(function() {
   console.log('booya');
   let $app = $('#app');
   $('main').empty();
@@ -8,6 +8,6 @@
   getLocation();
   getDate();
   getDataByCoordinates();
-  app.Render.BC(targetData);
-  app.sunView.translateR(app.Render.angle[0].angle);
+  app.Render.BC(targetData)
+  app.sunView.translateBC(app.Render.angles[0].angle);
 });
