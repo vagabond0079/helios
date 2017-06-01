@@ -61,3 +61,23 @@ nav {
     background-color:#34CACA;
 }
 /*test code delete please*/
+
+.BC-text{
+  transform: translateX(-7vh);
+}
+
+.R-text{
+  transform: translateX(-7vh);
+}
+
+.U-text{
+  transform: translateY(-7vh);
+}
+
+.S-text{
+  transform: translateX(4vh);
+}
+
+.EC-text{
+  transform: translateX(4vh);
+}
