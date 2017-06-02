@@ -108,9 +108,8 @@ and iteration-count.*/
   width: 0;
 }
 #start-button {
-  border-radius: 7%;
-  box-shadow: inset 0px 1px 0px 0px #45D6D6;
-  border: 1px solid #27A0A0;
+  /*box-shadow: inset 0px 1px 0px 0px #45D6D6;*/
+  border: 1px solid #88898c;
   text-decoration: none;
   position: relative;
   margin: 20 -40px;
@@ -123,8 +122,8 @@ and iteration-count.*/
   font-size: 1.2em;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #2CBBBB;
+  background-color: #bec0c4;
 }
 #start-button:hover {
-  background-color:#34CACA;
+  background-color:#fff44f;
 }
