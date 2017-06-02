@@ -18,11 +18,16 @@ h1 {
 }
 
 h2 {
-  font-size: 2vw;
+  font-size: 1.3em;
   font-family: 'Playfair Display', serif;
   font-style: bold;
-  margin-left: 3%;
-  hover:
+  margin: 0 3% 0 3%;
+}
+
+.intro, .directions {
+  font-size: .9em;
+  margin: 1.5% 3% 1.5% 3%;
+  font-family: 'Playfair Display', serif;
 }
 
 #app {
@@ -35,11 +40,16 @@ h2 {
   font-family: 'Playfair Display', serif;
 }
 
-/*#team-div p {
+#team-div p {
   margin-bottom: 3%;
   margin-top: 3%;
-}*/
-
+  font-size: 1em;
+  font-family: 'Playfair Display', serif;
+}
+circle p {
+  margin: 5% 0 0 5%;
+  font-size: .75em;
+}
 #team {
   display: none;
 }
@@ -50,18 +60,12 @@ h2 {
 
 #team-link:hover {
   background: #fff44f;
-  /*font-family: 'Playfair Display', serif;*/
 }
 
 .team-image {
 width: 170px;
 height: auto;
 -webkit-border-radius: 30px;
-}
-
-p {
-font-size: 1em;
-font-family: 'Playfair Display', serif;
 }
 
 .fa-4x {
