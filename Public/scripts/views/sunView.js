@@ -95,10 +95,5 @@ var app = app || {};
     }
   };
 
-  // app.sunView.keyframesPulse().delay(
-    // ((currentBC + 180) - currentSun)/360 * 20000);
-
-    // app.sunView.keyframesPulse().delay(
-      // ((currentBC + 180 + currentSun) / 360) * 20000);
   module.sunView = sunView;
 }(app));

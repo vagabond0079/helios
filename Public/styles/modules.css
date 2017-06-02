@@ -74,16 +74,7 @@ and iteration-count.*/
 }
 
   .header{
-    /*background-color: yellow;*/
     height: 10vh;
-  }
-
-  .left-bar{
-    /*background-color: green;*/
-  }
-
-  .right-bar{
-    /*background-color: purple;*/
   }
 
   .circle-container{
@@ -92,6 +83,7 @@ and iteration-count.*/
     margin-left: auto;
     margin-right: auto;
   }
+
 #enter-city{
   position: relative;
   z-index: 11;
@@ -100,8 +92,8 @@ and iteration-count.*/
   color: #7B7B7B;
   cursor:pointer;
   width: 0;
-
 }
+
 #enter-date {
   position: relative;
   z-index: 10;
@@ -112,7 +104,6 @@ and iteration-count.*/
   width: 0;
 }
 #start-button {
-  /*box-shadow: inset 0px 1px 0px 0px #45D6D6;*/
   border: 1px solid #88898c;
   text-decoration: none;
   position: relative;

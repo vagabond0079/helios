@@ -70,8 +70,6 @@ height: auto;
 
 .fa-4x {
   color: #fff44f;
-  /*margin-left: 2%;*/
-  /*margin-top: .5%;*/
   font-size: 3.5em;
 }
 
@@ -102,7 +100,6 @@ li a {
 }
 
 li a:hover:not(.active) {
-  /*color: red;*/
   background-color: #fff44f;
 }
 .active {
@@ -118,9 +115,6 @@ nav a, button {
 min-width: 48px;
 min-height: 48px;
 cursor: pointer;
-/*margin-top: 3%;
-margin-right: 3%;
-font-size: 1vw;*/
 }
 
 body {

@@ -11,8 +11,6 @@ this.gitHub = teamData.gitHub;
 this.linkedIn = teamData.linkedIn;
 };
 
-// let Team = new Team
-
 Team.prototype.toHtml = function() {
   let template = $("#team-template").html();
   console.log('teamRender line18',template);
@@ -27,10 +25,3 @@ teamData.forEach(function(callback) {
 teamArray.forEach(function(callback){
   $('#team').append(callback.toHtml());
 });
-
-//
-// Team.loadAll = function(teamData) {
-//   Team.all = teamData(function(ele) {
-//     return new Team(ele)
-//   })
-// };

@@ -98,7 +98,6 @@ nav li{
     height: auto;
     padding: .4em;
     margin-bottom: 60px;
-    /*box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);*/
 }
 .form-get-data input[type="text"],
 .form-get-data input[type="date"]
@@ -137,7 +136,6 @@ p {
   position: absolute;
 }
 #team-div a {
-  /*background: #fff44f;*/
   border-bottom: 2px solid #fff44f;
 }
 }
