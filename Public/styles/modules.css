@@ -48,7 +48,6 @@
   top: -1vh;
   right: -4vh;
 
-
 /*Sets up the animation duration, timing-function (or easing)
 and iteration-count.*/
 
@@ -64,7 +63,6 @@ and iteration-count.*/
 
 .inner-circle {
   position: absolute;
-  /*display: none;*/
   width: 50vh;
   height: 50vh;
   border: 2px solid black;/

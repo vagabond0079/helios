@@ -46,10 +46,12 @@ h2 {
   font-size: 1em;
   font-family: 'Playfair Display', serif;
 }
+
 circle p {
   margin: 5% 0 0 5%;
   font-size: .75em;
 }
+
 #team {
   display: none;
 }
@@ -105,7 +107,8 @@ li a:hover:not(.active) {
 .active {
   color: blue;
 }
-.header{
+
+.header {
   margin: 0 auto;
   width: 50%;
   height: 10vh;
@@ -130,9 +133,11 @@ body {
   margin: 15% 39%;
   position: absolute;
 }
+
 .fa-bars {
   display: none;
 }
+
 .fa-times {
   display: none;
 }

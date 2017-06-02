@@ -1,5 +1,4 @@
 'use strict';
-console.log('teamrenderjs');
 
 let teamArray = [];
 
@@ -13,7 +12,6 @@ this.linkedIn = teamData.linkedIn;
 
 Team.prototype.toHtml = function() {
   let template = $("#team-template").html();
-  console.log('teamRender line18',template);
   let templateRender = Handlebars.compile(template);
   return templateRender(this);
 };
