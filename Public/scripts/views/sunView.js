@@ -67,11 +67,11 @@ var app = app || {};
     console.log(angleBC, angleR, angleS, angleEC);
     $.keyframe.define([{
       name: 'pulse',
-      '0%' : { 'background-color': '#00bfff'},
-      '5%' : { 'background-color': '#fd5e53'},
+      '0%' : { 'background-color': '#ccf5f3'},
+      '5%' : { 'background-color': '#df8773'},
       '15%' : { 'background-color': '#666'},
-      '35%' : { 'background-color':  '#fd5e53'},
-      '40%' : { 'background-color': '#00bfff'},
+      '35%' : { 'background-color':  '#df8773'},
+      '40%' : { 'background-color': '#ccf5f3'},
     }]);
   };
 
