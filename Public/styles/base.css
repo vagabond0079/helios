@@ -22,16 +22,37 @@ h2 {
   font-family: 'Playfair Display', serif;
   font-style: bold;
   margin-left: 3%;
+  hover:
 }
 
 #app {
   display: none;
 }
 
+#team-div p, #team-div a, #team-div img, #team-div {
+  color: black;
+  margin: 0% 2% 2% 2%;
+  font-family: 'Playfair Display', serif;
+}
+
+/*#team-div p {
+  margin-bottom: 3%;
+  margin-top: 3%;
+}*/
+
 #team {
   display: none;
-  margin:3%;
 }
+
+#team-name{
+  font-weight: bold;
+}
+
+#team-link:hover {
+  background: #fff44f;
+  /*font-family: 'Playfair Display', serif;*/
+}
+
 .team-image {
 width: 170px;
 height: auto;
@@ -39,8 +60,8 @@ height: auto;
 }
 
 p {
-  margin: 5% 0 0 5%;
-  font-size: 1vw;
+font-size: 1em;
+font-family: 'Playfair Display', serif;
 }
 
 .fa-4x {
@@ -65,6 +86,7 @@ li {
   float: right;
   margin-right: 2em;
 }
+
 li a {
   display: block;
   color: #000;
@@ -73,6 +95,7 @@ li a {
   text-decoration: none;
   cursor: pointer;
 }
+
 li a:hover:not(.active) {
   /*color: red;*/
   background-color: #fff44f;
