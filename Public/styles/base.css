@@ -28,6 +28,16 @@ h2 {
   display: none;
 }
 
+#team {
+  display: none;
+  margin:3%;
+}
+.team-image {
+width: 170px;
+height: auto;
+-webkit-border-radius: 30px;
+}
+
 p {
   margin: 5% 0 0 5%;
   font-size: 1vw;
@@ -92,4 +102,10 @@ body {
   display: none;
   margin: 15% 39%;
   position: absolute;
+}
+.fa-bars {
+  display: none;
+}
+.fa-times {
+  display: none;
 }
