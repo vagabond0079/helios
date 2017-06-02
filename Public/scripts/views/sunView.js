@@ -64,7 +64,6 @@ var app = app || {};
     let angleR = app.Render.angles[1].angle;
     let angleS = app.Render.angles[3].angle;
     let angleEC = app.Render.angles[4].angle;
-    console.log(angleBC, angleR, angleS, angleEC);
     $.keyframe.define([{
       name: 'pulse',
       '0%' : { 'background-color': '#ccf5f3'},
@@ -81,15 +80,12 @@ var app = app || {};
     let currentS = app.Render.angles[3].angle;
     let currentR = app.Render.angles[1].angle;
     if (currentSun > 0){
-      console.log('afternoon');
       setTimeout(function(){
         app.sunView.keyframesPulse();},((currentS - currentSun)/360 * 40000));
     }else if (currentSun < 0 && currentSun > currentR){
-      console.log('morning');
       setTimeout(function(){
         app.sunView.keyframesPulse();},(((currentS - currentSun) / 360) * 40000));
     }else{
-      console.log('pre-dawn');
       setTimeout(function(){
         app.sunView.keyframesPulse();}, 40000);
     }
