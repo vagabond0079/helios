@@ -21,6 +21,10 @@ h1 {
   display: none;
 }
 
+#team {
+  display: none;
+}
+
 p {
   margin: 5% 0 0 5%;
 }
