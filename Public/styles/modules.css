@@ -73,11 +73,6 @@ and iteration-count.*/
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
-
-  .header{
-    height: 10vh;
-  }
-
   .left-bar{
     /*background-color: green;*/
   }
@@ -114,6 +109,10 @@ and iteration-count.*/
   width: 0;
 }
 #start-button {
+  border-radius: 7%;
+  box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  border: 1px solid #27A0A0;
+  text-decoration: none;
   position: relative;
   min-width: 8em;
   min-height: 4em;
@@ -125,8 +124,8 @@ and iteration-count.*/
   font-size: 1.2em;
   text-decoration: none;
   text-transform: uppercase;
-  background: #D3D3D3;
+  background-color: #2CBBBB;
 }
 #start-button:hover {
-  background-color:#fff44f;
+  background-color:#34CACA;
 }
