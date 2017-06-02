@@ -23,6 +23,12 @@ h1 {
 
 #team {
   display: none;
+  margin:3%;
+}
+.team-image {
+width: 170px;
+height: auto;
+-webkit-border-radius: 30px;
 }
 
 p {
