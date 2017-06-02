@@ -79,14 +79,15 @@ var app = app || {};
   sunView.fireKeyframes = () =>{
     let currentSun = app.Render.angles[5].angle;
     let currentS = app.Render.angles[3].angle;
+    let currentR = app.Render.angles[1].angle;
     if (currentSun > 0){
       console.log('afternoon');
       setTimeout(function(){
         app.sunView.keyframesPulse();},((currentS - currentSun)/360 * 40000));
-    }else if (currentSun < 0 && currentSun > currentS){
+    }else if (currentSun < 0 && currentSun > currentR){
       console.log('morning');
       setTimeout(function(){
-        app.sunView.keyframesPulse();},(((360 - currentSun - currentS) / 360) * 40000));
+        app.sunView.keyframesPulse();},(((currentS - currentSun) / 360) * 40000));
     }else{
       console.log('pre-dawn');
       setTimeout(function(){
