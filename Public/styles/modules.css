@@ -39,7 +39,6 @@
 .Cur {
 	width: 5vh;
 	height: 5vh;
-	background: red;
     z-index: 1000;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
@@ -116,11 +115,10 @@ and iteration-count.*/
 }
 #start-button {
   position: relative;
-  min-width: 8em;
-  min-height: 4em;
-  margin: 20 -60px;
+  min-width: 6em;
+  min-height: 3em;
   padding: 2%;
-  left: 40%;
+  left: 35%;
   cursor: pointer;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.2em;

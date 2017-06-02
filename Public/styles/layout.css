@@ -116,6 +116,10 @@ nav li{
 .form-get-data input[type="submit"]:hover {
 
 }
+#team-div a {
+  /*background: #fff44f;*/
+  border-bottom: 2px solid #fff44f;
+}
 }
 
 .BC-text{
