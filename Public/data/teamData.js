@@ -2,7 +2,7 @@ let teamData = [
 {
 imageUrl: "http://i.imgur.com/Nqs6Xaw.png",
 name: "Amanda Koster",
-bio: "SOME TEXT",
+bio: "Amanda makes visual sense of mental spaghetti. She is passionate about building the future of visual experiences with collaborative teams that focus on user stories. I have a comprehensive understanding of end-to-end visual storytelling concepts [think user stories, customer experience, products as stories], design, strategy, management, and production for a wide range of applications.",
 github: "https://github.com/amandakoster",
 linkedIn: "https://www.linkedin.com/in/amandakoster/",
 },
@@ -16,7 +16,7 @@ linkedIn: "https://www.linkedin.com/in/brian-mcfarlane-462552a3/",
 {
 imageUrl: "http://i.imgur.com/s9BXVRe.jpg",
 name: "Derek Farmer",
-bio: "Derek is a 2013 graduate of Seattle University\'s School of Theology and Ministry. After receiving his Master of Pastoral Studies, Derek and his wife Katy spent a year in Rome where he was a Russell Berrie Fellow for Interreligious Studies at the Pontifical University of St. Thomas Aquinas, known as the Angelicum. Prior to graduate school, Derek was an intelligence officer in the US Navy and was stationed in the United Kingdom, South Korea, and aboard the USS Monterey (CG-61) homeported in Norfolk, Virginia. He was the Field Director and Volunteer Coordinator for Mike McGinn\'s 2009 campaign for Mayor of Seattle and spent two years working for at City Hall in constituent relations. Most recently, Derek was the Market Programs Director at Tilth Alliance where, among other programs, he managed the Food and Faith Initiative, which seeks to help faith communities build vegetable gardens on their properties in order to provide fresh produce for local food banks.",
+bio: "Derek is a graduate of Seattle University\'s School of Theology and Ministry. He spent a year in Rome studying at the Pontifical University of St. Thomas Aquinas. Later, Derek was an intelligence officer in the US Navy, stationed globally aboard the USS Monterey (CG-61). He was Field Director for Mike McGinn\'s 2009 campaign for Mayor of Seattle and spent two years working for at City Hall in constituent relations. He managed the Food and Faith Initiative for Tilth Alliance, which seeks to help faith communities build vegetable gardens on their properties.",
 gitHub: "https://github.com/vagabond0079",
 linkedIn: "https://www.linkedin.com/in/derek-farmer-7a8a067a",
 },
