@@ -87,8 +87,6 @@ and iteration-count.*/
   }
 
   .circle-container{
-    /*border: 2px solid black;*/
-    /*background-color: grey;*/
     height: 50vh;
     width: 50vh;
     margin-left: auto;
@@ -114,7 +112,11 @@ and iteration-count.*/
   width: 0;
 }
 #start-button {
+  /*box-shadow: inset 0px 1px 0px 0px #45D6D6;*/
+  border: 1px solid #88898c;
+  text-decoration: none;
   position: relative;
+  margin: 20 -40px;
   min-width: 6em;
   min-height: 3em;
   padding: 2%;
@@ -124,7 +126,7 @@ and iteration-count.*/
   font-size: 1.2em;
   text-decoration: none;
   text-transform: uppercase;
-  background: #D3D3D3;
+  background-color: #bec0c4;
 }
 #start-button:hover {
   background-color:#fff44f;

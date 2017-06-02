@@ -70,8 +70,9 @@ height: auto;
 
 .fa-4x {
   color: #fff44f;
-  margin: 1%;
-  font-size: 5em;
+  /*margin-left: 2%;*/
+  /*margin-top: .5%;*/
+  font-size: 3.5em;
 }
 
 .fa-globe .fa-calendar {
@@ -106,6 +107,11 @@ li a:hover:not(.active) {
 }
 .active {
   color: blue;
+}
+.header{
+  margin: 0 auto;
+  width: 50%;
+  height: 10vh;
 }
 /*MOBILE FIRST STANDARDS*/
 nav a, button {
