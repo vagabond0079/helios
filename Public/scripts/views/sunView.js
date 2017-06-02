@@ -69,9 +69,10 @@ var app = app || {};
       name: 'pulse',
       '0%' : { 'background-color': '#ccf5f3'},
       '5%' : { 'background-color': '#df8773'},
-      '15%' : { 'background-color': '#666'},
+      '30%' : { 'background-color': '#666'},
       '35%' : { 'background-color':  '#df8773'},
-      '40%' : { 'background-color': '#ccf5f3'},
+      '45%' : { 'background-color': '#ccf5f3'},
+      '100%' : { 'background-color': '#ccf5f3'},
     }]);
   };
 
