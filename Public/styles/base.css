@@ -17,12 +17,20 @@ h1 {
   margin-left: 3%;
 }
 
+h2 {
+  font-size: 2vw;
+  font-family: 'Playfair Display', serif;
+  font-style: bold;
+  margin-left: 3%;
+}
+
 #app {
   display: none;
 }
 
 p {
   margin: 5% 0 0 5%;
+  font-size: 1vw;
 }
 
 .fa-4x {
