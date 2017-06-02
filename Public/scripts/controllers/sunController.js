@@ -6,5 +6,4 @@ $('#start-button').click(function() {
   $('#loading-img').show();
   getDate();
   getLocation();
-
 });
