@@ -15,6 +15,15 @@
 	<link href="/styles/themes.css" rel="stylesheet">
   <link rel="shortcut icon" href="/data/favicon-sun-o.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+  <script id="team-template" type="text/x-handlbars-template">
+            <img src="{{imageUrl}}" class="team-image"/>
+            <p>{{name}}</p>
+            <p>{{bio}}</p>
+            <a href="{{gitHub}}">GitHub</a>
+            <a href="{{linkedIn}}">LinkedIn</a>
+</script>
+<script id="repo-template" type="text/x-handlebars-template"></script>
 </head>
 <body>
 	<header>
@@ -22,7 +31,7 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="/aboutus">Team</a>
+					<a href="#team" id="team-button">Team</a>
 				</li>
 				<li>
 					<a href="#home">Home</a>
@@ -30,6 +39,7 @@
 			</ul>
 		</nav>
 	</header>
+
 	<main>
 		<div class="header">
 			<h1>Helios means sun in Greek.</h1>
@@ -38,7 +48,9 @@
       <button type="button" id="start-button">Start</button>
 		</div>
 	</main>
-
+  <section id="team">
+	<h1>Helios is:</h1>
+</section>
   <!-- This is the loading image -->
   <img id="loading-img" src="/data/loading-img.gif" />
 
@@ -46,7 +58,6 @@
     <div class="right-bar"></div>
     <div class="background"></div>
     <div class="left-bar"></div>
-
     <div class="form-get-data">
       <form action="#" id="newData">
         <input id="city-Name" type="text" name="city" placeholder="Please enter City Name"/>
@@ -90,6 +101,11 @@
 	</script>
 	<script src="/data/secret.js">
 	</script>
+	<script src="/data/teamData.js"></script>
+  <script src="/scripts/views/teamView.js">
+  </script>
+  <script src="/scripts/models/teamRender.js">
+  </script>
 	<script src="/scripts/models/middleware.js">
 	</script>
 	<script src="/scripts/models/sun.js">
