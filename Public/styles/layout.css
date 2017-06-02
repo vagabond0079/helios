@@ -71,12 +71,16 @@ nav {
   cursor: pointer;
   z-index:100;
 }
+.fa-times {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index:100;
+}
 nav {
-  border: 1px solid blue;
-  /*display: block;*/
   width: 100%;
-  /*height: 50px;*/
-  /*z-index: 10000000000;*/
 
 }
 nav ul {
@@ -84,7 +88,7 @@ nav ul {
   height: auto;
 }
 nav li{
-  border: 1px solid blue;
+  border-bottom: 1px solid #ddd;
   display: block;
   width: 100%;
   float: none;
@@ -94,30 +98,23 @@ nav li{
     height: auto;
     padding: .4em;
     margin-bottom: 60px;
+    /*box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);*/
 }
 .form-get-data input[type="text"],
 .form-get-data input[type="date"]
 {
-    /*outline: none;*/
     display: block;
     width: 100%;
-    /*padding: 7px;*/
-    /*border: none;
-    border-bottom: 1px solid #ddd;*/
-    /*background: transparent;*/
-    margin-bottom: -20px;
-    /*font: 16px Arial, Helvetica, sans-serif;*/
-    /*height: 45px;*/
-    /*text-align: center;*/
+    margin-bottom: -10px;
 }
 .form-get-data input[type="button"],
 .form-get-data input[type="submit"]{
     margin: 0 40%;
-    margin-top: 25px;
+
 }
 .form-get-data input[type="button"]:hover,
 .form-get-data input[type="submit"]:hover {
-    margin-top: 25px;
+
 }
 }
 
