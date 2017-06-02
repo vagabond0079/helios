@@ -10,15 +10,15 @@ MATH NEEDED: we could time the 'animation: pulse 20s [20sec = 10sec blue, 10 sec
   0% {
     background-color: #001a33;
   }
-  /*30% {
+  30% {
     background-color: #938CA6;
   }
   75% {
     background-color: #fd5e53;
-  }*/
+  }
   100% {
     background-color:  #fff44f;
   }
-}
-*/
+}*/
+
 /*END ANIMATED BACKGROUND:*/

@@ -72,12 +72,12 @@ margin-right: 3%;
 font-size: 1vw;*/
 }
 
-/*body {
-  background-color: #003366;
+body {
+  background-color: #00bfff;
   width: 100%;
   height: 100%;
-  animation: pulse 20s infinite;
-}*/
+  animation: pulse 40s infinite;
+}
 
 /*loading img styling don't touch it*/
 #loading-img {

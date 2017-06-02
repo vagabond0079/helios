@@ -62,4 +62,5 @@ var getDataByCoordinates = function() { $.get( "/usno/rstt/oneday?", {date:`${cu
   .done(() => $app.fadeIn())
   .done(() => $('#loading-img').hide())
   .done(() => app.Render.BC(targetData))
-  .done(()=> app.sunView.translateBC(app.Render.angles[0].angle));};
+  .done(() => app.sunView.translateBC(app.Render.angles[0].angle))
+  .done(() => app.sunView.fireKeyframes());};
