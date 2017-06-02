@@ -17,11 +17,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
   <script id="team-template" type="text/x-handlbars-template">
-            <img src="{{imageUrl}}" class="team-image"/>
-            <p>{{name}}</p>
-            <p>{{bio}}</p>
-            <a href="{{gitHub}}">GitHub</a>
-            <a href="{{linkedIn}}">LinkedIn</a>
+            <div id="team-div">
+						<img src="{{imageUrl}}" class="team-image"/>
+            <p id="team-name">{{name}}</p>
+            <p>{{bio}} id="team-bio"></p>
+            <a href="{{gitHub}}" id="team-link">GitHub</a>
+            <a href="{{linkedIn}}" id="team-link">LinkedIn</a>
+						</div>
 </script>
 <script id="repo-template" type="text/x-handlebars-template"></script>
 </head>

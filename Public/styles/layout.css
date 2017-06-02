@@ -136,6 +136,10 @@ p {
   margin: 25% 3%;
   position: absolute;
 }
+#team-div a {
+  /*background: #fff44f;*/
+  border-bottom: 2px solid #fff44f;
+}
 }
 
 .BC-text{
