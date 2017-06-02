@@ -131,6 +131,11 @@ p {
   font-size: 1em;
   font-family: Arial, Helvetica, sans-serif;
 }
+#loading-img {
+  display: none;
+  margin: 25% 3%;
+  position: absolute;
+}
 }
 
 .BC-text{
