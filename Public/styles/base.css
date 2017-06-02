@@ -17,12 +17,30 @@ h1 {
   margin-left: 3%;
 }
 
+h2 {
+  font-size: 2vw;
+  font-family: 'Playfair Display', serif;
+  font-style: bold;
+  margin-left: 3%;
+}
+
 #app {
   display: none;
 }
 
+#team {
+  display: none;
+  margin:3%;
+}
+.team-image {
+width: 170px;
+height: auto;
+-webkit-border-radius: 30px;
+}
+
 p {
   margin: 5% 0 0 5%;
+  font-size: 1vw;
 }
 
 .fa-4x {
@@ -72,16 +90,22 @@ margin-right: 3%;
 font-size: 1vw;*/
 }
 
-/*body {
-  background-color: #003366;
+body {
+  background-color: #ccf5f3;
   width: 100%;
   height: 100%;
-  animation: pulse 20s infinite;
-}*/
+  animation: pulse 40s infinite;
+}
 
 /*loading img styling don't touch it*/
 #loading-img {
   display: none;
   margin: 15% 39%;
   position: absolute;
+}
+.fa-bars {
+  display: none;
+}
+.fa-times {
+  display: none;
 }

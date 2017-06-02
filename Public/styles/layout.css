@@ -60,7 +60,63 @@ nav {
     background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
     background-color:#34CACA;
 }
-/*test code delete please*/
+
+/*styles for hamburger menu on smaller screen*/
+@media screen and (max-width: 479px){
+.fa-bars {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index:100;
+}
+.fa-times {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index:100;
+}
+nav {
+  width: 100%;
+
+}
+nav ul {
+  margin-top: 0;
+  height: auto;
+}
+nav li{
+  border-bottom: 1px solid #ddd;
+  display: block;
+  width: 100%;
+  float: none;
+}
+.form-get-data{
+    width: 100%;
+    height: auto;
+    padding: .4em;
+    margin-bottom: 60px;
+    /*box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);*/
+}
+.form-get-data input[type="text"],
+.form-get-data input[type="date"]
+{
+    display: block;
+    width: 100%;
+    margin-bottom: -10px;
+}
+.form-get-data input[type="button"],
+.form-get-data input[type="submit"]{
+    margin: 0 40%;
+
+}
+.form-get-data input[type="button"]:hover,
+.form-get-data input[type="submit"]:hover {
+
+}
+}
 
 .BC-text{
   transform: translateX(-7vh);
@@ -71,7 +127,7 @@ nav {
 }
 
 .U-text{
-  transform: translateY(-7vh);
+  transform: translateY(-9vh);
 }
 
 .S-text{

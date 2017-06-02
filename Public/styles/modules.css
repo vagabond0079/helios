@@ -53,10 +53,14 @@
 /*Sets up the animation duration, timing-function (or easing)
 and iteration-count.*/
 
-  -webkit-animation: orbit 20s linear infinite;
-     -moz-animation: orbit 20s linear infinite;
-       -o-animation: orbit 20s linear infinite;
-          animation: orbit 20s linear infinite;
+  -webkit-animation: orbit 40s linear infinite;
+     -moz-animation: orbit 40s linear infinite;
+       -o-animation: orbit 40s linear infinite;
+          animation: orbit 40s linear infinite;
+}
+
+.sun-icon{
+  transform: translateX(-1.7vh) translateY(-1.8vh);
 }
 
 .inner-circle {

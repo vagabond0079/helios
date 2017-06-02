@@ -62,4 +62,32 @@ var getDataByCoordinates = function() { $.get( "/usno/rstt/oneday?", {date:`${cu
   .done(() => $app.fadeIn())
   .done(() => $('#loading-img').hide())
   .done(() => app.Render.BC(targetData))
-  .done(()=> app.sunView.translateBC(app.Render.angles[0].angle));};
+  .done(() => app.sunView.translateBC(app.Render.angles[0].angle))
+  .done(() => app.sunView.fireKeyframes());};
+
+// navigation menu script
+$( window ).resize(function() {
+  if ($(window).width() < 479) {
+    $('.navigation-menu').hide();
+    $('#newData').hide();
+    $('.fa-times').hide();
+    $('.fa-bars').on('click', function() {
+      $('.navigation-menu').show('slow', function() {
+        $('.fa-bars').hide();
+        $('#newData').show('slow');
+        $('.fa-times').show();
+      });
+    });
+    $('.fa-times').on('click', function(){
+      $('.navigation-menu').hide('slow', function(){
+        $('.fa-times').hide();
+        $('#newData').hide('slow');
+        $('.fa-bars').show();
+      });
+    });
+  }
+  else {
+    $('.navigation-menu').show();
+    $('#newData').show();
+  }
+});
