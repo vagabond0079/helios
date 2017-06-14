@@ -83,15 +83,15 @@ var app = app || {};
     if (currentSun > 0){
       console.log('afternoon');
       setTimeout(function(){
-        app.sunView.keyframesPulse();},((currentS - currentSun)/360 * 40000));
+        app.sunView.keyframesPulse();},((currentS - currentSun)/360 * 86400000));
     }else if (currentSun < 0 && currentSun > currentR){
       console.log('morning');
       setTimeout(function(){
-        app.sunView.keyframesPulse();},(((currentS - currentSun) / 360) * 40000));
+        app.sunView.keyframesPulse();},(((currentS - currentSun) / 360) * 86400000));
     }else{
       console.log('pre-dawn');
       setTimeout(function(){
-        app.sunView.keyframesPulse();}, 40000);
+        app.sunView.keyframesPulse();}, 86400000);
     }
   };
 
