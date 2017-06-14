@@ -81,13 +81,13 @@ var app = app || {};
     let currentR = app.Render.angles[1].angle;
     if (currentSun > 0){
       setTimeout(function(){
-        app.sunView.keyframesPulse();},((currentS - currentSun)/360 * 40000));
+        app.sunView.keyframesPulse();},((currentS - currentSun)/360 * 86400000));
     }else if (currentSun < 0 && currentSun > currentR){
       setTimeout(function(){
-        app.sunView.keyframesPulse();},(((currentS - currentSun) / 360) * 40000));
+        app.sunView.keyframesPulse();},(((currentS - currentSun) / 360) * 86400000));
     }else{
       setTimeout(function(){
-        app.sunView.keyframesPulse();}, 40000);
+        app.sunView.keyframesPulse();}, 86400000);
     }
   };
 
